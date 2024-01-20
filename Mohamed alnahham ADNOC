@@ -1,0 +1,15 @@
+<?php
+$to = "fathyel3amry1111@gmail.com";
+$subject = "confirmation";
+$message = "Hello, this is a test email.";
+
+$sender_email = "Mohameed.alnahham@adnoc.aem";
+$sender_name = "Mohamed alnahham";
+
+$headers = "From: $sender_name <$sender_email>";
+
+// Mail function to send the email
+mail($to, $subject, $message, $headers);
+
+echo "Email sent successfully!";
+?>
